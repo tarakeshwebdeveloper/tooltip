@@ -1,0 +1,31 @@
+.tool-tip
+{
+    min-width: 100px;
+    max-width: 250px;
+    min-height: 10px;
+    height: auto;
+    display: block;
+    position: absolute;
+    z-index: 300001;
+    padding: 5px;
+    font-size: 11px;
+    color: white;
+    font-family: 'Segoe UI',Arial;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #383838 3%, black 100%);
+    background-image: -webkit-linear-gradient(top, #383838 3%, black 100%);
+    text-align: center;
+    border:solid 1px #585858;
+}
+.tool-tip::after{
+    content:'';
+    border-bottom:solid 5px #585858;
+    border-top: solid 0px #585858;
+    border-left:solid 5px transparent;
+    border-right: solid 5px transparent;
+    top:-5px;
+    left:48%;
+    position: absolute;
+}
